@@ -2,10 +2,8 @@
 
 s = '/usr/local/bin/python'
 
-list = s.split('/')
-file = s.find('/')
+result1 = s.strip('/').split('/')
+print(result1)
 
-print(list)
-print(file)
-
-
+index = s.rfind('/')
+print(s.rsplit('/', 1))

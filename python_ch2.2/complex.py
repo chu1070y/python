@@ -1,9 +1,9 @@
 a = 4 + 5j
 print(type(a))
 
-print('lo' or 'logical')
+b = 7 - 2j
+print(a + b)
 
-s = 'hello world'
-
-
-
+p = 2.5
+q = 3
+print(complex(p, q))
