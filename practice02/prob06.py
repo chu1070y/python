@@ -7,11 +7,11 @@ import random
 # "더 높게", 다시 75이라고 입력하면 "더 낮게" 라는 식으로 범위를 좁혀가며 수를 맞추고 있습니다.
 # 게임을 반복하기 위해 y/n이라고 묻고 n인 경우 종료됩니다.
 
-min, max = 1, 100
+f_min, f_max = 1, 100
 
 
-def game(min, max, answer, count=1):
-    print(min, '-', max)
+def game(low, high, answer, count=1):
+    print(low, '-', high)
     number = int(input(str(count) + '>>'))
 
     if number == answer:
@@ -20,19 +20,19 @@ def game(min, max, answer, count=1):
 
     if number < answer:
         print('더 높게')
-        game(number, max, answer, count + 1)
+        game(max(number, low), high, answer, count + 1)
 
     if number > answer:
         print('더 낮게')
-        game(min, number, answer, count + 1)
+        game(low, min(number, high), answer, count + 1)
 
 
 while True:
-    n = random.randrange(max) + min
+    n = random.randrange(f_max) + f_min
     print('수를 결정하였습니다. 맞추어 보세요')
     print(n)
 
-    game(min, max, n)
+    game(f_min, f_max, n)
 
     if 'y' != input('다시 하겠습니까?(y/n)>>'):
         break
