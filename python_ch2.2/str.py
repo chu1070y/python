@@ -173,7 +173,7 @@ print('1234'.zfill(5))
 print('name:{}, age:{}'.format('둘리', 10))
 print('name:{0}, age:{1}'.format('둘리', 10))
 print('name:{1}, age:{0}'.format(10, '둘리'))
-print('{:3}의 제곱근은 {:.7}'.format(2, 2**0.5))
+print('{:3}의 제곱근은 {:.7}'.format(2345, 2**0.5))
 print('name:{n}, age:{a}'.format_map({'a':20, 'n':'둘리'}))
 
 

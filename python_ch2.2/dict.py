@@ -26,6 +26,7 @@ print('valleyball' in d)
 d = {}
 print(type(d))
 
+
 # 2. dict() 사용하는 방법1
 d = dict()
 print(d)
@@ -34,24 +35,24 @@ print(d)
 d = dict(one=1, two=2, three=3)
 print(d)
 
-# 3. dict() 사용하는 방법3
+# 2. dict() 사용하는 방법3
 d = dict([('one', 1), ('two', 2), ('three', 3)])
 print(d)
 
-# 4. dict() 사용하는 방법4 - zip를 사용하는 방법
+# 2. dict() 사용하는 방법4 - zip를 사용하는 방법
 keys = ('one', 'two', 'three')
 values = (1, 2, 3)
 d = dict(zip(keys, values))
 print(d)
 
-# 다양한 key 타입
-d = {}
+# 다양한 key 타입(Immutable 타입만 가능하다)
 
+d = {}
 d[True] = 'true'
 d[10] = '10'
 d['twenty'] = 20
-d[(1, 2, 3)] = 12
-
+d[(1, 2, 3)] = 6
+# d[[1, 2, 3]] = '6'
 print(d)
 
 # keys 객체
@@ -64,20 +65,20 @@ for key in keys:
 values = d.values()
 print(values, type(values))
 
-# items 객체
+#  items 객체
+# [(key1, value1), (key2, value2) ....]
 items = d.items()
 print(items, type(items))
 
+# copy() test
 phone = {
     '둘리': '000-0000-0000',
     '마이콜': '111-1111-1111',
     '또치': '222-2222-2222'
 }
-
 p = phone
 print(p)
 print(phone)
-
 p['도우넛'] = '333-3333-3333'
 print(p)
 print(phone)
@@ -87,23 +88,43 @@ phone = {
     '마이콜': '111-1111-1111',
     '또치': '222-2222-2222'
 }
-
 p = phone.copy()
 print(p)
 print(phone)
-
 p['도우넛'] = '333-3333-3333'
 print(p)
 print(phone)
 
+
 # get() 함수
-# get을 사용하는 이유는 해당 키값에 대한 값이 존재하지 않는 경우
+# get를 사용하는 이유는 해당 키값에 대한 값이 존재하지 않는 경우
 # None을 받기 위해서
 # print(phone['도우넛'])
 print(phone.get('도우넛'))
 
 # setDefault
+# get 차이점은 실제로 저장한다.
 print(phone.setdefault('도우넛', '333-3333-3333'))
 print(phone)
 
-phone.pop('둘리')
+# 삭제와 동시에 값 가져오가
+number = phone.pop('둘리')
+print(number)
+print(phone)
+
+# 튜플로 가져오기
+item = phone.popitem()
+print(item, type(item))
+print(phone)
+
+# 업데이트
+phone.update({
+    '도우넛': '333-3333-3333',
+    '또치': '444-4444-4444'
+})
+print(phone)
+
+# 모두 삭제하기
+phone.clear()
+print(phone)
+

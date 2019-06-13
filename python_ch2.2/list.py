@@ -16,8 +16,8 @@ print(l[len(l)-1::-1])
 l2 = l * 2
 print(l2)
 
-# 연결 (+)
-l3 = l + [3,4,5]
+# 연결(+)
+l3 = l + [3, 4, 5]
 print(l3)
 
 # 길이
@@ -47,15 +47,119 @@ print(a)
 a[1:2] = [20]
 print(a)
 
+# 슬라이싱을 통한 삭제
+a = [1, 12, 123, 1234]
+
 a[1:2] = []
 print(a)
 
+a[0:] = []
+print(a)
+
 # 슬라이싱을 통한 삽입
-a = [1, 12, 123, 234]
+a = [1, 12, 123, 1234]
 
 # 중간
-a[1:1] = a[:]
+a[1:1] = ['a']
+print(a)
 
-# 위에 삽입
+# 마지막
+a[5:] = [12345]
+print(a)
+
+# 처음
+a[:0] = [0]
+print(a)
+
+# 여러개 삽입
+a[2:2] = [-12, -1, 0]
+print(a)
+
+#
+#  객체함수
+#
+
+a = [1, 12, 123, 1234]
+
+# 중간삽입
+a.insert(1, 'a')
+print(a)
+
+# 뒤에삽입
 a.append(12345)
-print()
+print(a)
+
+# 앞에삽입
+a.insert(0, 0)
+print(a)
+
+# reverse
+a.reverse()
+print(a)
+
+# 제거(값)
+a.remove(12)
+print(a)
+
+# 확장
+a.extend([-1, -2, -3])
+print(a)
+
+# 스택으로 사용하기
+stack = []
+stack.append(10)
+stack.append(20)
+stack.append(30)
+
+print(stack)
+print(stack.pop())
+print(stack.pop())
+print(stack.pop())
+print(stack)
+
+# queue로 사용하기
+q = [1, 2]
+q.append(3)
+q.append(4)
+q.append(5)
+
+print(q)
+print(q.pop(0))
+print(q.pop(0))
+print(q.pop(0))
+print(q)
+
+# sort() : 내장된 소팅 알고리즘
+l3 = [1, 5, 2, 3, 40, 9, 8]
+l3.sort()
+print(l3)
+
+l3.sort(reverse=True)
+print(l3)
+
+l3 = [10, 2, 22, 9, 8, 33, 4]
+l3.sort(key=str)
+print(l3)
+
+l3 = [10, 2, 22, 9, 8, 33, 4]
+l3.sort(key=int)
+print(l3)
+
+# cf. 내장(전역) 함수 sorted
+l3 = [10, 2, 22, 9, 8, 33, 4]
+
+l4 = sorted(l3)
+print(l4)
+
+l4 = sorted(l3, reverse=True)
+print(l4)
+
+l3 = [10, 46, 22, 93, 81, 35, 44]
+
+def f(n):
+    return n % 10
+
+l4 = sorted(l3, key=f)
+print(l4)
+
+

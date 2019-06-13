@@ -1,9 +1,10 @@
 # set 생성
-
+s = set()
+print(s, type(s))
 s = {1, 2, 3}
 print(s, type(s))
 
-# 기본연산
+#  기본연산
 print(len(s))
 print(2 in s)
 print(10 not in s)
@@ -19,12 +20,14 @@ print(nums)
 s.add(7)
 print(s)
 
+s.add(2)
+print(s)
+
 s.discard(2)
 print(s)
 
-# 존재하지 않는 객체 삭제시 예외 발생
+# 존재하지 객체 삭제시 예외 발생
 # s.remove(2)
-# print(s)
 
 s.update({2, 7, 8})
 print(s)
@@ -39,12 +42,17 @@ s2 = {10, 20, 30}
 s3 = s1.union(s2)
 print(s3)
 
-s3 = s1.intersection(s2)
+s4 = s1.intersection(s2)
+print(s4)
+
+s3 = s1.difference(s2)
 print(s3)
 
 s3 = s1.symmetric_difference(s2)
 print(s3)
 
 print(s1.issuperset(s4))
-print(s1.issuperset(s4))
-print(s1.issuperset(s4))
+print(s4.issuperset(s1))
+print(s4.issubset(s1))
+
+
