@@ -17,18 +17,10 @@ print('Before sort')
 
 print()
 for i in range(len(arr) - 1):
-    change = 0
-    for j in range(0, len(arr) - 1):
+    for j in range(0, len(arr) - i - 1):
         if arr[j] >= arr[j + 1]:
             continue
-
-        temp = arr[j]
-        arr[j] = arr[j + 1]
-        arr[j + 1] = temp
-        change += 1
-
-    if change == 0:
-        break;
+        arr[j], arr[j + 1] = arr[j + 1], arr[j]
 
 print('After sort')
 [print(x, end=' ') for x in arr]
