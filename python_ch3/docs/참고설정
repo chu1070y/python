@@ -100,7 +100,7 @@ INSTALLED_APPS = [
        'python_ch3',
        ...,
        ...
-   ]
+]
 
 
 

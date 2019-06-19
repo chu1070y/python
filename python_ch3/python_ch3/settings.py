@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'helloworld',
+    'snowpenguin.django.recaptcha3',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -122,3 +123,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# reCAPTCHA TEST
+
+RECAPTCHA_PRIVATE_KEY = '6LelqKkUAAAAAB_eaeRaItGj8VxTQl5dJkf1_ow5'
+RECAPTCHA_PUBLIC_KEY = '6LelqKkUAAAAAIvP49XKeXi1BEVmqUL36i4VW-Pn'
+RECAPTCHA_DEFAULT_ACTION = 'generic'
+RECAPTCHA_SCORE_THRESHOLD = 0.5
