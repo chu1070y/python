@@ -17,6 +17,9 @@
       <excludeFolder url="file://$MODULE_DIR$/python_ch2.6/venv" />
       <excludeFolder url="file://$MODULE_DIR$/python_ch2.7/venv" />
       <excludeFolder url="file://$MODULE_DIR$/python_ch2.8/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/python_ch2.9/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/python_ch3/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/test/venv" />
       <excludeFolder url="file://$MODULE_DIR$/untitled/venv" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
