@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="942cf2a4-974a-4d91-b6e5-a5b4571322e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../python_ch2.8/mystring.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../python_ch2.8/rect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/python_ch3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/참고설정" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../python_pgsql/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../python_pgsql/test_connect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../python_pgsql/test_crud.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/python.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python_ch2.8/paint.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python_ch2.8/paint.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python_ch2.8/point.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python_ch2.8/point.py" afterDir="false" />
-    </list>
+    <list default="true" id="942cf2a4-974a-4d91-b6e5-a5b4571322e4" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
