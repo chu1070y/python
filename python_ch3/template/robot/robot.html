@@ -16,11 +16,35 @@
     </form>
 
 <script>
-grecaptcha.ready(function() {
+
+$(document).ready(function(){
+
+    grecaptcha.ready(function() {
       grecaptcha.execute('6Le-q6kUAAAAAFPDTU6lct7ZRRN7vK55hVF4Icp3', {action: 'login'}).then(function(token) {
          console.log(token)
+
+         $.ajax({
+			url: '/robot/token',
+			type : 'GET',
+			dataType: 'json',
+			data : {'token_value': token},
+			success : function(result){
+				console.log(result);
+			},
+			fail: function(e){
+			    console.log("fail")
+			}
+
+		  });// end ajax
+
       });
+    });
+
+
+
 });
+
+
 </script>
 </body>
 
