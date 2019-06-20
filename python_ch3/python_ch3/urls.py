@@ -24,6 +24,7 @@ import emaillist.views as emaillist_views
 urlpatterns = [
     path('emaillist/', emaillist_views.index),
     path('emaillist/form', emaillist_views.form),
+    path('emaillist/add', emaillist_views.add),
     path('robot/', robot_views.robot),
     path('helloworld/', helloworld_views.hello),
     path('admin/', admin.site.urls),
