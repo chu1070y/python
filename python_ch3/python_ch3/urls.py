@@ -19,8 +19,11 @@ from django.urls import path
 # from python_ch3 import helloworld
 import helloworld.views as helloworld_views
 import robot.views as robot_views
+import emaillist.views as emaillist_views
 
 urlpatterns = [
+    path('emaillist/', emaillist_views.index),
+    path('emaillist/form', emaillist_views.form),
     path('robot/', robot_views.robot),
     path('helloworld/', helloworld_views.hello),
     path('admin/', admin.site.urls),

@@ -30,6 +30,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'emaillist',
     'helloworld',
     'snowpenguin.django.recaptcha3',
     'django.contrib.admin',
